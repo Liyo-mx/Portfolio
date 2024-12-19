@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+          *{
+    margin:auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #faf8f6;
+  
+}
+.main{
+   display: grid;
+   grid-template-columns:300px 1fr; 
+   grid-template-areas:
+   'side main'
+   'side main'
+   'side main' ;
+    max-width: 100%;
+   
+    
+}
+
+.sidebar{
+    color:#faf8f6;
+   display:grid;
+    grid-area:side;
+    background-color:#eae8e2 ;
+    padding: 20px;
+    text-align: center;
+    box-shadow:0 0px 5px rgba(0, 0, 0, 0.3) ;
+    height: 100vh;
+    position: fixed;
+
+
+
+}
+.sidebar h1{
+    margin-top: 20px;
+    
+    font-size: 2em;
+}
+.sidebar ul li a{
+   
+    color:#584831d6;
+   font-size: 1.7em;
+    text-decoration: none;
+    font-weight: bold;
+   
+   
+    
+   
+   
+
+}
+.sidebar ul{
+ 
+    list-style-type: none;
+}
+
+.sidebar li{
+   padding: 40px;
+
+   
+}
+.sidebar li:hover{
+    background-color: rgba(0, 0, 0, 0.115) ;
+    padding: 40px;
+    border-radius: 10px;
+     
+    
+
+}
+.main{
+    grid-area: main;
+}
+
+/* Projects */
+.projects{
+    grid-area: main;
+    
+}
+.projects h1{
+    font-size: 3em;
+    text-align: center;
+    color:  #967969;
+    
+    padding-top: 60px;
+    border-bottom:3px solid  #EADDCA;
+}
+.project-boxes{
+    background-color:white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 750px;
+    width: 80vw;
+    text-align: center;
+   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+   
+}
+.project-text{
+    font-size: 1.7em;
+    margin-top: 10px;
+    
+    
+}
+span{
+    font-size: 1.7em;
+    background-color:#eae8e2;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.tags{
+    margin-top: 20px;
+}
+img{
+    border-radius: 5px;
+}
+.link{
+    margin-top: 30px;
+    background-color: #5b8d76;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    text-decoration: none;
+}
+.link a{
+    font-size: 1.7em;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+    .main{
+     width:100%; 
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'side'
+    'main'
+    'main'; 
+    }
+    .sidebar{
+        position: static;
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="main">
+        <aside class="sidebar">
+    
+            <img src="logo.png" alt="logo image" width="300px">
+       
+            <nav>
+                <ul>
+                    <li><a href="liyo.html">Home</a></li>
+                    <li><a href="myresume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+       
+    </aside>
+
+    <section class="projects">
+        <header>
+            <h1>My Projects</h1>
+        </header>
+
+        <!-- projects 1 -->
+        <div class="project-boxes">
+            <img src="Capture.PNG" alt="Resume" width="400px" height="300px">
+
+            <div class="project-text">
+                <h2>CSS Resume Layout</h2>
+
+                <p>Use of CSS Properties to design modern looking resume layouts</p>
+            </div>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="link">
+            <a href="https://liyo-mx.github.io/modern/" target="_blank"> View</a>
+            </div>
+
+        </div>
+
+        <!-- project 2 -->
+
+        <div class="project-boxes">
+            <img src="blog.PNG" alt="Blog Page" width="400px" height="300px">
+
+            <div class="project-text">
+                <h2>CSS Flexbox Webpage</h2>
+
+                <p>Responsive flexbox webpage using CSS flex properties</p>
+            </div>
+            <div class="tags">
+                <span>Font</span>
+                <span>Flexbox</span>
+                <span>HTML</span>
+            </div>
+            <div class="link">
+            <a href="https://liyo-mx.github.io/blog/" target="_blank"> View</a>
+            </div>
+        </div>
+
+        <!-- project3 -->
+
+        <div class="project-boxes">
+            <img src="form.PNG" alt="Forms" width="400px" height="300px">
+
+            <div class="project-text">
+                <h2>HTML Forms</h2>
+
+                <p>HTML form to sign up for an Adventure Club</p>
+            </div>
+            <div class="tags">
+                <span>Responsive</span>
+                <span>Media Queries</span>
+                <span>HTML</span>
+            </div>
+            <div class="link" >
+            <a href="https://liyo-mx.github.io/form/" target="_blank"> View</a>
+            </div>
+        </div>
+    
+
+    </section>
+    </section>
+
+    
+</body>
+</html>
